@@ -18,7 +18,7 @@ public class info2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info2);
         TextView main = (TextView) findViewById(R.id.text);
-        TextView main1 = (TextView) findViewById(R.id.text1);
+
         //ObjectAnimator one = ObjectAnimator.ofFloat(main, "alpha", 0,1).setDuration(300);
         //ObjectAnimator two = ObjectAnimator.ofFloat(main1, "alpha",0,1).setDuration(300);
         //AnimatorSet anim = new AnimatorSet();
@@ -27,7 +27,7 @@ public class info2 extends AppCompatActivity {
 
         Animation adone1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         main.startAnimation(adone1);
-        main1.startAnimation(adone1);
+
 
 
 
@@ -38,20 +38,20 @@ public class info2 extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         final TextView main = (TextView) findViewById(R.id.text);
-        final TextView main1 = (TextView) findViewById(R.id.text1);
+
 
         ObjectAnimator one = ObjectAnimator.ofFloat(main, "alpha", 1,0).setDuration(200);
-        ObjectAnimator two = ObjectAnimator.ofFloat(main1, "alpha",1,0).setDuration(200);
+
 
         AnimatorSet anim = new AnimatorSet();
-        anim.playTogether(one,two);
+        anim.playTogether(one);
         anim.start();
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 main.setVisibility(View.INVISIBLE);
-                main1.setVisibility(View.INVISIBLE);
+
 
             }
         });

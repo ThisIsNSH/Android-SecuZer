@@ -11,24 +11,63 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     android:orientation="vertical">
+
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:elevation="4dp"
 
-        android:scaleType="centerCrop"
-        android:src="@drawable/pic2" />
+        android:scaleType="fitCenter"
+        android:src="@drawable/main"
+        android:id="@+id/imageView" />
+<!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
+        <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:elevation="0dp"
+android:foreground="@drawable/tint3"
+        android:id="@+id/videoView1"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/videoView1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="secuzer "
+            android:elevation="1dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:elevation="0dp"
+
+        android:id="@+id/button1"
+        android:background="#00000000"/>
+    </RelativeLayout>-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-condensed"
-        android:text="SHRI PRAHLAD GUNJAL"
-        android:textColor="#494949"
+        android:text="LASER SECURITY "
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -37,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-condensed"
-        android:text="MLA, KOTA NORTH (RAJASTHAN)"
+        android:text="ARDUINO ASSISTED"
         android:textColor="#494949"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
@@ -47,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-condensed"
-        android:text="BHARTIYA JANTA PARTY"
+        android:text="LDR GUIDED"
         android:textColor="#494949"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
@@ -108,19 +147,25 @@ android:orientation="vertical"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:id="@+id/info1image"
+                        android:foreground="@drawable/tint"
                         android:transitionName="@string/image1"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic1"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Info Tab1"
+                        android:text="ABOUT PROJECT"
                         android:textAllCaps="true"
+                        android:textStyle="bold|italic"
+                        android:textSize="17sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+
+                        android:id="@+id/textView" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -140,17 +185,22 @@ android:orientation="vertical"
                         android:layout_weight="1"
                         android:id="@+id/info2image"
                         android:transitionName="@string/image2"
+
+                        android:foreground="@drawable/tint"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/pic1"/>
+                        android:src="@drawable/pic3"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Info Tab2"
+                        android:text="CIRCUIT "
+                        android:textStyle="bold|italic"
+                        android:textSize="17sp"
                         android:textAllCaps="true"
+                        android:clickable="false"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+                        />
                 </LinearLayout>
             </LinearLayout>
 
@@ -179,18 +229,21 @@ android:orientation="vertical"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:id="@+id/info3image"
+
+                        android:foreground="@drawable/tint"
                         android:transitionName="@string/image3"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/pic1"/>
+                        android:src="@drawable/pic4"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Info Tab3"
+                        android:text="MATERIAL USED"
                         android:textAllCaps="true"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+                        android:textStyle="bold|italic"
+                        android:textSize="17sp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -205,6 +258,7 @@ android:orientation="vertical"
                     android:layout_marginRight="8dp"
                     android:background="#f3f3f3"
                     android:elevation="4dp">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -212,16 +266,20 @@ android:orientation="vertical"
                         android:id="@+id/info4image"
                         android:transitionName="@string/image4"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/pic1"/>
+                        android:foreground="@drawable/tint"
+
+                        android:src="@drawable/pic5"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Info Tab4"
+                        android:text="CODE"
                         android:textAllCaps="true"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+                        android:textStyle="bold|italic"
+                        android:textSize="17sp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -230,7 +288,6 @@ android:orientation="vertical"
         </LinearLayout>
 
     </ScrollView>
-
 
 
 </FrameLayout>

@@ -292,12 +292,18 @@ public void back(View view){
 
     }
 
-
+public void web (View view)
+{
+    String url1 = "https://secuzer.tk";
+    Intent i1 = new Intent(Intent.ACTION_VIEW);
+    i1.setData(Uri.parse(url1));
+    startActivity(i1);
+}
 
     public void call(View view){
 
                 Intent callIntent = new Intent(Intent.ACTION_VIEW);
-                callIntent.setData(Uri.parse("tel:9560705734"));
+                callIntent.setData(Uri.parse("tel:9736066176"));
 
                 if (ActivityCompat.checkSelfPermission(this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
@@ -308,20 +314,20 @@ public void back(View view){
 
     }
     public void facebook(View view){
-        String url = "https://www.facebook.com/pgunjal/";
+        String url = "https://www.facebook.com/shivam.kapila.1?ref=br_rs";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
     }
     public void twitter(View view){
-        String url = "https://twitter.com/prahladgunjal?lang=en";
+        String url = "https://twitter.com/ThisIsNSH";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
     }
     public void locate(View view){
 
-        String url = "https://www.google.co.in/maps/place/BJP+Office/@25.1794336,75.838623,17z/data=!3m1!4b1!4m5!3m4!1s0x396f9b3ad9124c19:0xb75aea612750309a!8m2!3d25.1794336!4d75.8408117";
+        String url = "https://www.google.co.in/maps/place/Kailash+Boys+Hostel/@31.7089206,76.5238424,17.04z/data=!4m8!1m2!2m1!1skbh+nit+hamirpur!3m4!1s0x0:0x5b0a8b8b6c508646!8m2!3d31.7104267!4d76.5266941?hl=en";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
                 startActivity(i);

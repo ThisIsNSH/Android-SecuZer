@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">PRAHLAD GUNJAL APP</string>
-    <string name="action_settings">Feedback</string>
+    <string name="app_name">SECUZER</string>
+    <string name="video">video</string>
+    <string name="action_settings">Blooper</string>
     <string name="fab">fab</string>
     <string name="simple4">simple42</string>
     <string name="simple3">simple32</string>

@@ -30,20 +30,21 @@
                 android:layout_height="match_parent"
                 android:transitionName="@string/image4"
                 android:scaleType="centerCrop"
-                android:src="@drawable/pic1" />
+                android:foreground="@drawable/tint"
+                android:src="@drawable/pic5" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/info4image"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="32dp" android:layout_marginBottom="16dp"
                 android:fontFamily="sans-serif-condensed"
                 android:background="#00000000"
-                android:text="info tab4"
+                android:text="CODE"
                 android:textAllCaps="true"
                 android:id="@+id/text"
                 android:textColor="#ffffff"
-                android:textSize="50sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
 
@@ -73,12 +74,29 @@
                     android:id="@+id/text1"
 
                     android:padding="4dp"
-                    android:text="dfgdfg\ndfgdfg\ndfgdfg\ndfgdfg\ndfgdfgs\nsdsfgsdg"
+                    android:text="open our arduino code at"
                     android:textAllCaps="true"
                     android:textColor="#494949"
                     android:textSize="20sp"
 
                     android:textStyle="italic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="#F3F3F3"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textlink"
+android:onClick="link"
+                    android:padding="4dp"
+                    android:text="g-drive link here"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+
+                    android:textStyle="italic|bold" />
 
 
             </LinearLayout>

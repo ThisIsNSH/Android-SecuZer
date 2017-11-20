@@ -4,6 +4,8 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -58,6 +60,13 @@ public class info4 extends AppCompatActivity {
 
         super.onBackPressed();
 
+    }
+    public void link (View view)
+    {
+        String url = "https://drive.google.com/open?id=1teDixavc1Q2jBObbI8Zx5SLmeQz5cIGZ";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
 

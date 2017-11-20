@@ -30,20 +30,20 @@
                 android:layout_height="match_parent"
                 android:transitionName="@string/image3"
                 android:scaleType="centerCrop"
-                android:src="@drawable/pic1" />
+                android:src="@drawable/pic4" android:foreground="@drawable/tint"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/info3image"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="32dp"
                 android:fontFamily="sans-serif-condensed"
                 android:background="#00000000"
-                android:text="info tab3"
+                android:text="components" android:layout_marginBottom="16dp"
                 android:id="@+id/text"
                 android:textAllCaps="true"
                 android:textColor="#ffffff"
-                android:textSize="50sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
 
@@ -73,7 +73,7 @@
 
 
                     android:padding="4dp"
-                    android:text="dfgdfg\ndfgdfg\ndfgdfg\ndfgdfg\ndfgdfgs\nsdsfgsdg"
+                    android:text="arduino\nbread board\nresistors and switch \nbuzzer\nldr and led\nconnecting wires"
                     android:textAllCaps="true"
                     android:textColor="#494949"
                     android:textSize="20sp"

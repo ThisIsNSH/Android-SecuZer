@@ -9,6 +9,7 @@ package com.gunjal.prahlad.prahladgunjal;
         import android.app.FragmentTransaction;
         import android.content.Intent;
         import android.content.pm.PackageManager;
+        import android.net.Uri;
         import android.os.Bundle;
         import android.support.v4.app.ActivityCompat;
         import android.support.v4.app.ActivityOptionsCompat;
@@ -20,6 +21,7 @@ package com.gunjal.prahlad.prahladgunjal;
         import android.support.v4.view.ViewPager;
         import android.support.v7.app.AppCompatActivity;
         import android.view.Menu;
+        import android.view.MenuItem;
         import android.view.View;
         import android.view.animation.Animation;
         import android.view.animation.AnimationUtils;
@@ -41,8 +43,31 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                String url1 = "https://youtu.be/GCAx7ta_XPQ";
+                Intent i1 = new Intent(Intent.ACTION_VIEW);
+                i1.setData(Uri.parse(url1));
+                startActivity(i1);
+                return true;
+            case R.id.video_settings:
+
+                String url = "https://youtu.be/8STrAXV-cxI";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
     public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 3;
+        private static int NUM_ITEMS = 2;
 
         public MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
@@ -61,9 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0: // Fragment # 0 - This will show FirstFragment
                     return FirstFragment.newInstance(0, "Page # 1");
                 case 1: // Fragment # 0 - This will show SecondFragment
-                    return SecondFragment.newInstance(1, "Page # 2");
-                case 2: // Fragment # 0 - This will show ThirdFragment
-                    return ThirdFragment.newInstance(2, "Page # 3");
+                    return ThirdFragment.newInstance(1, "Page # 2");
 
                 default:
                     return null;
@@ -76,12 +99,10 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             if (position == 0) {
 
-                return "About Me"                 ;
-            } if (position == 1) {
-                return "Live Feeds";
+                return "DETAILS"                 ;
             }
             else {
-                return "Ask & More";
+                return "CONTRIBUTORS";
             }
 
 
@@ -158,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
 
     // ...
 
-    public void fabclick(View view) {
+    public void fabclick1(View view) {
 
         // Ordinary Intent for launching a new activity
         Intent intent = new Intent(this, fab.class);

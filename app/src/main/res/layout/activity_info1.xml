@@ -29,7 +29,7 @@
                 android:id="@+id/info1image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-android:transitionName="@string/image1"
+android:transitionName="@string/image1" android:foreground="@drawable/tint"
                 android:scaleType="centerCrop"
                 android:src="@drawable/pic1" />
 
@@ -38,13 +38,14 @@ android:transitionName="@string/image1"
                 android:layout_height="wrap_content"
                 android:id="@+id/text"
                 android:layout_alignBottom="@+id/info1image"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="sans-serif-condensed"
                 android:background="#00000000"
-                android:text="info tab1"
+                android:text="ABOUT PROJECT"
                 android:textAllCaps="true"
                 android:textColor="#ffffff"
-                android:textSize="50sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
 
@@ -74,7 +75,7 @@ android:transitionName="@string/image1"
 android:id="@+id/text1"
 
                     android:padding="4dp"
-                    android:text="dfgdfg\ndfgdfg\ndfgdfg\ndfgdfg\ndfgdfgs\nsdsfgsdg"
+                    android:text="the project has two modes. safe mode and security mode. in security mode when someone blocks the laser the buzzer makes sound. thus it is a security system to prevent theft."
                     android:textAllCaps="true"
                     android:textColor="#494949"
                     android:textSize="20sp"

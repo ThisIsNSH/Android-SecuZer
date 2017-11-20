@@ -1,6 +1,8 @@
 package com.gunjal.prahlad.prahladgunjal;
 
 import android.content.Intent;
+import android.graphics.PixelFormat;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
@@ -12,12 +14,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
+import android.widget.VideoView;
 
 
 public class FirstFragment extends Fragment {
@@ -53,7 +55,29 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_first_fragment, container, false);
 
+/*
+        final Button buttonPlayVideo2 = (Button) view.findViewById(R.id.button1);
+        getActivity().getWindow().setFormat(PixelFormat.UNKNOWN);
+//displays a video file
+       final  VideoView mVideoView2 = (VideoView) view.findViewById(R.id.videoView1);
+      final  String uriPath2 = "android.resource://com.gunjal.prahlad.prahladgunjal/"+R.raw.v;
+        Uri uri2 = Uri.parse(uriPath2);
+        mVideoView2.setVideoURI(uri2);
+        mVideoView2.requestFocus();
+        mVideoView2.start();
+        buttonPlayVideo2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+// VideoView mVideoView = new VideoView(this);
+               final  String uriPath = "android.resource://com.gunjal.prahlad.prahladgunjal/" + R.raw.v;
+                Uri uri2 = Uri.parse(uriPath);
+                mVideoView2.setVideoURI(uri2);
+                mVideoView2.requestFocus();
+                mVideoView2.start();
+            }
+        });
+*/
         final View newPage = view.findViewById(R.id.info1);
         final View newPage1 =  view.findViewById(R.id.info2);
         final View newPage2 = view.findViewById(R.id.info3);
