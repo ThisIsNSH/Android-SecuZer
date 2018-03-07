@@ -38,13 +38,13 @@ fab extends AppCompatActivity {
 
 
 
-        LinearLayout one = (LinearLayout) findViewById(R.id.top);
-        LinearLayout two = (LinearLayout) findViewById(R.id.center);
-        LinearLayout three = (LinearLayout) findViewById(R.id.bottom);
-        FrameLayout d = (FrameLayout) findViewById(R.id.fab4);
-        FrameLayout c = (FrameLayout) findViewById(R.id.fab3);
-        FrameLayout b = (FrameLayout) findViewById(R.id.fab2);
-        FrameLayout a = (FrameLayout) findViewById(R.id.fab1);
+        LinearLayout one =  findViewById(R.id.top);
+        LinearLayout two =  findViewById(R.id.center);
+        LinearLayout three =  findViewById(R.id.bottom);
+        FrameLayout d =  findViewById(R.id.fab4);
+        FrameLayout c =  findViewById(R.id.fab3);
+        FrameLayout b =  findViewById(R.id.fab2);
+        FrameLayout a = findViewById(R.id.fab1);
         Animation adone1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         Animation adone5 = AnimationUtils.loadAnimation(this, R.anim.translate);
         Animation adone6 = AnimationUtils.loadAnimation(this, R.anim.translate);
