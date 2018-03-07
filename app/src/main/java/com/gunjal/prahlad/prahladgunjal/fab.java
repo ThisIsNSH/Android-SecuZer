@@ -38,8 +38,9 @@ fab extends AppCompatActivity {
 
 
 
-        LinearLayout one =  findViewById(R.id.top);
-        LinearLayout two =  findViewById(R.id.center);
+        LinearLayout one =           (LinearLayout) findViewById(R.id.top);
+        		
+		LinearLayout two =(LinearLayout)  findViewById(R.id.center);
         LinearLayout three =  findViewById(R.id.bottom);
         FrameLayout d =  findViewById(R.id.fab4);
         FrameLayout c =  findViewById(R.id.fab3);
